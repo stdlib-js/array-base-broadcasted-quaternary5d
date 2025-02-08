@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-02-03)
+## Unreleased (2025-02-08)
 
 <section class="features">
 
@@ -34,6 +34,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`60334d6`](https://github.com/stdlib-js/stdlib/commit/60334d6d17a9f29c0045c139b8ede24d1182b870) - **refactor:** update paths _(by gururaj1512)_
 -   [`f71dbdc`](https://github.com/stdlib-js/stdlib/commit/f71dbdc7ea992486cdc2042c24a6d4a2b57c002e) - **feat:** add `array/base/broadcasted/quaternary5d` [(#3301)](https://github.com/stdlib-js/stdlib/pull/3301) _(by Gururaj Gurram, Athan Reines, stdlib-bot)_
 
 </details>
@@ -46,10 +47,11 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
 -   Gururaj Gurram
+-   gururaj1512
 
 </section>
 
