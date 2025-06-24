@@ -149,7 +149,7 @@ var w = filled5dBy( shapes[ 3 ], discreteUniform( -100, 100 ) );
 console.log( w );
 
 var out = zeros5d( shapes[ 4 ] );
-console.log( z );
+console.log( out );
 
 bquaternary5d( [ x, y, z, w, out ], shapes, add );
 console.log( out );
@@ -185,11 +185,6 @@ For more information on the project, filing bug reports and feature requests, an
 [![Chat][chat-image]][chat-url]
 
 ---
-
-## License
-
-See [LICENSE][stdlib-license].
-
 
 ## Copyright
 
@@ -236,8 +231,6 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 [esm-url]: https://github.com/stdlib-js/array-base-broadcasted-quaternary5d/tree/esm
 [esm-readme]: https://github.com/stdlib-js/array-base-broadcasted-quaternary5d/blob/esm/README.md
 [branches-url]: https://github.com/stdlib-js/array-base-broadcasted-quaternary5d/blob/main/branches.md
-
-[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/array-base-broadcasted-quaternary5d/main/LICENSE
 
 [@stdlib/array/base/broadcast-array]: https://github.com/stdlib-js/array-base-broadcast-array
 
