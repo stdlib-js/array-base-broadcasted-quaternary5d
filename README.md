@@ -41,14 +41,32 @@ limitations under the License.
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/array-base-broadcasted-quaternary5d
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import bquaternary5d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-broadcasted-quaternary5d@esm/index.mjs';
+var bquaternary5d = require( '@stdlib/array-base-broadcasted-quaternary5d' );
 ```
 
 #### bquaternary5d( arrays, shapes, fcn )
@@ -56,8 +74,8 @@ import bquaternary5d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-broa
 Applies a quaternary callback to elements in four [broadcasted][@stdlib/array/base/broadcast-array] input arrays and assigns results to elements in a five-dimensional nested output array.
 
 ```javascript
-import add from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-add4@esm/index.mjs';
-import zeros5d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zeros5d@esm/index.mjs';
+var add = require( '@stdlib/number-float64-base-add4' );
+var zeros5d = require( '@stdlib/array-base-zeros5d' );
 
 var x = [ [ 1.0, 2.0 ] ];
 var y = [ [ 3.0 ], [ 4.0 ] ];
@@ -103,17 +121,12 @@ The function accepts the following arguments:
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-var discreteUniform = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform' ).factory;
-import filled5dBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-filled5d-by@esm/index.mjs';
-import zeros5d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-zeros5d@esm/index.mjs';
-import add from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-add4@esm/index.mjs';
-import bquaternary5d from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-broadcasted-quaternary5d@esm/index.mjs';
+```javascript
+var discreteUniform = require( '@stdlib/random-base-discrete-uniform' ).factory;
+var filled5dBy = require( '@stdlib/array-base-filled5d-by' );
+var zeros5d = require( '@stdlib/array-base-zeros5d' );
+var add = require( '@stdlib/number-float64-base-add4' );
+var bquaternary5d = require( '@stdlib/array-base-broadcasted-quaternary5d' );
 
 var shapes = [
     [ 1, 1, 1, 3, 1 ],
@@ -136,14 +149,10 @@ var w = filled5dBy( shapes[ 3 ], discreteUniform( -100, 100 ) );
 console.log( w );
 
 var out = zeros5d( shapes[ 4 ] );
-console.log( z );
+console.log( out );
 
 bquaternary5d( [ x, y, z, w, out ], shapes, add );
 console.log( out );
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -167,7 +176,7 @@ console.log( out );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -176,11 +185,6 @@ For more information on the project, filing bug reports and feature requests, an
 [![Chat][chat-image]][chat-url]
 
 ---
-
-## License
-
-See [LICENSE][stdlib-license].
-
 
 ## Copyright
 
@@ -228,11 +232,9 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 [esm-readme]: https://github.com/stdlib-js/array-base-broadcasted-quaternary5d/blob/esm/README.md
 [branches-url]: https://github.com/stdlib-js/array-base-broadcasted-quaternary5d/blob/main/branches.md
 
-[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/array-base-broadcasted-quaternary5d/main/LICENSE
+[@stdlib/array/base/broadcast-array]: https://github.com/stdlib-js/array-base-broadcast-array
 
-[@stdlib/array/base/broadcast-array]: https://github.com/stdlib-js/array-base-broadcast-array/tree/esm
-
-[@stdlib/ndarray/base/broadcast-shapes]: https://github.com/stdlib-js/ndarray-base-broadcast-shapes/tree/esm
+[@stdlib/ndarray/base/broadcast-shapes]: https://github.com/stdlib-js/ndarray-base-broadcast-shapes
 
 </section>
 
